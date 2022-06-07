@@ -9,11 +9,19 @@
 */
 
 function solution(arr) {
+
+    // 첫번째
+    // let answer;
+    // let min = Number.MAX_SAFE_INTEGER;
+    // for (let n of arr) {
+    //     if (n < min) min = n;
+    // }
+    // answer = min;
+    // return answer;
+
+    // 보완
     let answer;
-    let min = Number.MAX_SAFE_INTEGER;
-    for (let n of arr) {
-        if (n < min) min = n;
-    }
+    let min = Math.min(...arr);
     answer = min;
     return answer;
 }
