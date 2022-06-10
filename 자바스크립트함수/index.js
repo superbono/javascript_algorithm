@@ -25,15 +25,21 @@
 // let value = 9;
 
 // let result = c.filter(function(arr, index) {
-//     if(arr != this) return arr;
+//     if(arr == this) return arr;
 // },value)
 
 // console.log(result);
 
 // reduce: 원본 배열을 이용하여 조건에 맞는 새로운 값을 반환한다.
-let d = [1, 9, 8, 6, 10, 14];
-let result = d.reduce(function(acc, value){
-    return acc+value;
-})
+// let d = [1, 9, 8, 6, 10, 14];
+// let a = 1
+// let result = d.reduce(function(acc, value){
+//     acc == a ? console.log("tt")  : console.log("222");
+// },a)
 
-console.log(result);
+// console.log(result);
+
+for (let i =0; i<3; i++) {
+    let list = []
+    list.push()
+}
