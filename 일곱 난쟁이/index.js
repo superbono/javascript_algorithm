@@ -18,8 +18,25 @@
 
 */
 
-function solution() {
-    console.log("일곱 난쟁이");
+function solution(arr) {
+    let answer = arr;
+    let sum = arr.reduce(function(a,b) {
+        return a+b;
+    },0)
+
+    for(let i=0; i< answer.length-1; i++) {
+        for(let j=1; j< answer.length; j++) {
+            if(sum-(arr[i]+arr[j]) === 100) {
+                // arr.splice(i,1);
+                // arr.splice(j-1,1);
+                arr.splice(j,1);
+                arr.splice(i,1);
+            }
+        }
+    }
+
+    return answer;
 }
 
-solution();
+let arr = [20, 7, 23, 19, 10, 15, 25, 8, 13]
+console.log(solution(arr));
